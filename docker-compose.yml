@@ -1,0 +1,41 @@
+version: "3.9"
+services:
+  node1:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - .:/opt/server
+  node2:
+    build: .
+    ports:
+      - "81:80"
+    volumes:
+      - .:/opt/server
+  node3:
+    build: .
+    ports:
+      - "82:80"
+    volumes:
+      - .:/opt/server
+  node4:
+    build: .
+    ports:
+      - "83:80"
+    volumes:
+      - .:/opt/server
+  node5:
+    build: .
+    ports:
+      - "84:80"
+    volumes:
+      - .:/opt/server
+  node6:
+    build: .
+    ports:
+      - "85:80"
+    volumes:
+      - .:/opt/server
+networks: 
+  default:
+    name: 'p2p'
